@@ -11,6 +11,7 @@ import { ThemeProvider } from 'next-themes';
 
 type View = 'form' | 'admin' | 'auth';
 
+// Triggering a new build for Netlify
 export default function App() {
   const [view, setView] = useState<View>('form');
   const [session, setSession] = useState<any>(null);
